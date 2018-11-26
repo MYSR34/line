@@ -48,4 +48,5 @@ function sending_messages($accessToken, $replyToken, $message_type, $return_mess
     $result = curl_exec($ch);
     curl_close($ch);
 }
+
 ?>
