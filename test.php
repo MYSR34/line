@@ -19,6 +19,7 @@ if($message_type != "text") exit;
 
 //返信実行
 sending_messages($accessToken, $replyToken, $message_type, $return_message_text);
+line:
 ?>
 <?php
 //メッセージの送信
