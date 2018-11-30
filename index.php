@@ -15,8 +15,75 @@ $message_text = $json_object->{"events"}[0]->{"message"}->{"text"};    //メッ�
 if($message_type != "text") exit;
  
 //返信メッセージ
-$return_message_text = "「" . $message_text . "」じゃねーよｗｗｗ";
- 
+//$return_message_text = "「" . $message_text . "」じゃねーよｗｗｗ";
+{
+    "type": "flex",
+    "altText": "hogehoge",
+    "contents": {
+        "type": "bubble",
+        "styles": {
+            "header": {
+                "backgroundColor": "#ff62ae"
+            },
+            "body": {
+                "backgroundColor": "#5bff54"
+            },
+            "footer": {
+                "backgroundColor": "#7b78ff"
+            }
+        },
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "footer"
+                }
+            ]
+        }
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "footer"
+                }
+            ]
+        }
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "footer"
+                }
+            ]
+        }
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "footer"
+                }
+            ]
+        }
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "footer"
+                }
+            ]
+        }
+    }
+}
 //返信実行
 sending_messages($accessToken, $replyToken, $message_type, $return_message_text);
 ?>
