@@ -1,0 +1,16 @@
+{
+    "type": "template",
+    "altText": "this is a buttons template",
+    "template": {
+        "type": "buttons",
+        "text": "＜設定＞\n好きなイベントのジャンル傾向を設定できるよ！！\n（初回のみ同意画面が表示されます）",
+        "actions": [
+            {
+                "type": "uri",
+                "label": "設定画面を開く",
+                "uri": "line://app/1617507924-ZebR9GN3"
+            }
+        ]
+
+    }
+}

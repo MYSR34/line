@@ -1,0 +1,95 @@
+{
+    "type": "template",
+    "altText": "this is a carousel template",
+    "template": {
+        "type": "carousel",
+        "actions": [],
+        "columns": [
+            {
+                "thumbnailImageUrl": "https://image.walkerplus.com/wpimg/walkertouch/wtd/event/83/n/17383.jpg",
+                "title": "TAMACENTER ILLUMINATION 2018",
+                "text": "2018/11/10(土)～2019/1/6(日)\n16:30～22:30\n多摩センター駅前",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "http://www.tamacenter-cm.com/illumi/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「TAMACENTER ILLUMINATION 2018」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://image.walkerplus.com/wpimg/walkertouch/wtd/event/94/n/17494.jpg",
+                "title": "よみうりランド ジュエルミネーション",
+                "text": "2018/10/11(木)～2019/2/17(日)\n16:00～20:30\n入場料：1400円",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "http://www.yomiuriland.com/jewellumination/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「よみうりランド ジュエルミネーション」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://www.puroland.jp/wp-content/uploads/2017/09/kt_illumi_2017_christmas_pc.jpg",
+                "title": "Blue Snow Christmas ～天使のおくりもの～",
+                "text": "2018/11/09(金)〜2018/12/25(火)\n10:10〜10:25他\nサンリオピューロランド",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "https://www.puroland.jp/liveshow/kt_illumi_2018_christmas/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「Blue Snow Christmas ～天使のおくりもの～」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://www.enjoytokyo.jp/img/s_e/3840/383572IMG1.jpg",
+                "title": "MIDTOWN CHRISTMAS",
+                "text": "2018/11/13(火)～2018/12/25(火)\n17:00～23:00\n東京ミッドタウン",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "http://www.tokyo-midtown.com/jp/event/xmas/illumination/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「MIDTOWN CHRISTMAS」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://sp.jorudan.co.jp/illumi/images/spot/320/128904_1.jpg",
+                "title": "東京スカイツリータウン(R) ドリームクリスマス2018",
+                "text": "2018/11/13(火)～2018/12/16(日)\n17:00～23:00\n入場無料",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "https://sp.jorudan.co.jp/illumi/spot_89401.html/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「東京スカイツリータウン(R) ドリームクリスマス2018」いいね！"
+                    }
+                ]
+            }
+        ]
+    }
+}
