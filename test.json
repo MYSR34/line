@@ -120,9 +120,9 @@
         "type": "button",
         "style": "primary",
         "action": {
-          "type": "uri",
-          "label": "Primary style button",
-          "uri": "https://example.com"
+          "type": "message",
+          "label": "OK",
+          "uri": "OK"
         }
       }
     ]
