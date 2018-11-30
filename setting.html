@@ -2,24 +2,64 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
+        <link href="s_style.css" rel="stylesheet" type="text/css"  />
         <title>イベント傾向設定(個人)</title>
+        <style>
+        input[type=checkbox]{
+            display: none;
+        }
+        input[type="checkbox"]:checked + label {
+            background: #31A9EE;
+            color: #ffffff;
+        }
+        .label:hover{
+            background-color: #E2EDF9;
+        }
+        .label{
+            display:block;
+            width:15vw;
+            height:8vw;
+            text-align:center;
+            line-height:8.5vw;
+            padding-left:2vw;
+            padding-right:2vw;
+            cursor:pointer;
+            color:#b20000;
+            /*margin:2vw;*/
+            margin: 0 auto;
+            border:1vw solid #006DD9;
+            border-radius:2vw;
+        }
+        body{
+            font-family: Meiryo;
+            text-align: center;
+            font-size: 3vw;
+        }
+        </style>
     </head>
     <body>
 
         <div id="checkarea">
-            <input id="c1" type="checkbox"/>音楽系<br/>
-            <input id="c2" type="checkbox"/>アウトドア系<br/>
-            <input id="c3" type="checkbox"/>電飾系<br/>
-            <input id="c4" type="checkbox"/>花火系<br/>
-            <input id="c5" type="checkbox"/>食物系<br/>
-            <input id="c6" type="checkbox"/>展示系<br/>
-            <input id="c7" type="checkbox"/>植物系<br/>
-            <input id="c8" type="checkbox"/>見る系<br/>
+            <input id="c1" type="checkbox" name="c1"/>
+            <label for="c1" class="label">音楽系</label><br/>
+            <input id="c2" type="checkbox" name="c2"/>
+            <label for="c2" class="label">アウトドア</label><br/>
+            <input id="c3" type="checkbox" name="c3"/>
+            <label for="c3" class="label">電飾系</label><br/>
+            <input id="c4" type="checkbox" name="c4"/>
+            <label for="c4" class="label">花火系</label><br/>
+            <input id="c5" type="checkbox" name="c5"/>
+            <label for="c5" class="label">飲食系</label><br/>
+            <input id="c6" type="checkbox" name="c6"/>
+            <label for="c6" class="label">展示系</label><br/>
+            <input id="c7" type="checkbox" name="c7"/>
+            <label for="c7" class="label">植物系</label><br/>
+            <input id="c8" type="checkbox" name="c8"/>
+            <label for="c8" class="label">見る系</label><br/>
 
             <input id="submit" type="button" value="決定"/><br/>
         </div>
         
-    
         
         
         <script type="text/javascript">
@@ -32,7 +72,9 @@
             var button = document.getElementById("submit");
             button.addEventListener("click", setting, false);
             
+            
         </script>
 
     </body>
+    
 </html>

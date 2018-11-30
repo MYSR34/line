@@ -1,0 +1,95 @@
+﻿{
+    "type": "template",
+    "altText": "this is a carousel template",
+    "template": {
+        "type": "carousel",
+        "actions": [],
+        "columns": [
+            {
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/66/l2/327166.jpg",
+                "title": "なりきりニャンコ展",
+                "text": "2018/11/20(土)～2019/3/10(日)\n9:00～22:00\nオービィ横浜内マルチスペース",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "http://orbi-y-event.sega.jp/cats_2018-2019/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「なりきりニャンコ展」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/01/l2/331601.jpg",
+                "title": "名画の時間展",
+                "text": "2018/12/8(土)～2019/3/17(日)\n16:00～20:30\nポーラ美術館",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "http://www.polamuseum.or.jp/exhibition/21539/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「名画の時間展」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/05/l2/326405.jpg",
+                "title": "モンスターストライク×東京ドームシティアトラクションズ「冬の遊園地を攻略せよ！」",
+                "text": "2018/11/23(金)〜2019/1/20(日)\n10:00〜21:00他\n東京ドームシティ",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "https://at-raku.com/event/monst_yuuenti2018/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「モンスターストライク×東京ドームシティアトラクションズ「冬の遊園地を攻略せよ！」」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/66/l2/330566_1.jpg",
+                "title": "扇の国、日本",
+                "text": "2018/11/28(水)～2019/1/20(日)\n10:00～18:00\nサントリー美術館",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "https://www.suntory.co.jp/sma/exhibition/2018_5/index.html"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「扇の国、日本」いいね！"
+                    }
+                ]
+            },
+            {
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/50/l2/308050.jpg",
+                "title": "～サンシャイン水族館～化ケモノ展",
+                "text": "2018/6/28(木)～2019/2/11(月)\n10:00～18:00\nサンシャイン水族館",
+                "actions": [
+                    {
+                        "type": "uri",
+                        "label": "詳細",
+                        "uri": "http://www.sunshinecity.co.jp/campaign/cp/bakemonoten/"
+                    },
+                    {
+                        "type":"message", 
+                        "label":"いいね", 
+                        "text":"「～サンシャイン水族館～化ケモノ展」いいね！"
+                    }
+                ]
+            }
+        ]
+    }
+}

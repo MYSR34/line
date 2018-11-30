@@ -15,7 +15,7 @@ $message_text = $json_object->{"events"}[0]->{"message"}->{"text"};    //メッ�
 if($message_type != "text") exit;
  
 //返信メッセージ
-$return_message_text = "「" . $message_text . "」じゃねーよｗｗｗ";
+//$return_message_text = "「" . $message_text . "」じゃねーよｗｗｗ";
 
 //返信実行
 sending_messages($accessToken, $replyToken, $message_type, $return_message_text);
@@ -23,6 +23,10 @@ sending_messages($accessToken, $replyToken, $message_type, $return_message_text)
 <?php
 //メッセージの送信
 function sending_messages($accessToken, $replyToken, $message_type, $return_message_text){
+    $json = file_get_contents('./test.json');
+
+    $data = json_decode($json, true);
+
     //レスポンスフォーマット
     $response_format_text = [
         "type" => $message_type,
@@ -32,7 +36,7 @@ function sending_messages($accessToken, $replyToken, $message_type, $return_mess
     //ポストデータ
     $post_data = [
         "replyToken" => $replyToken,
-        "messages" => [$response_format_text]
+        "messages" => [$data]
     ];
  
     //curl実行
