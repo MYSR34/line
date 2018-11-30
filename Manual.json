@@ -1,0 +1,128 @@
+{
+    "type": "flex",
+    "altText": "Flex Message",
+    "contents": {
+      "type": "bubble",
+      "direction": "ltr",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "＜イベント提案くん マニュアル＞",
+            "margin": "md",
+            "align": "center",
+            "gravity": "top",
+            "weight": "bold",
+            "color": "#248739"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "「提案くん」＋以下のメッセージが送られた場合のみ、それぞれのアクションを送信します。",
+            "size": "md",
+            "align": "start",
+            "gravity": "top",
+            "weight": "bold",
+            "color": "#9D3F3F",
+            "wrap": true
+          },
+          {
+            "type": "separator",
+            "margin": "xl",
+            "color": "#5243DC"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "「イベント」",
+                "margin": "md",
+                "size": "sm",
+                "align": "start",
+                "gravity": "top",
+                "color": "#9D3F3F"
+              },
+              {
+                "type": "text",
+                "text": "傾向に応じたイベントを提案します。最大5つ。場所や日付などが含まれていた場合、それを条件とします。",
+                "size": "xs",
+                "gravity": "top",
+                "color": "#0D6251",
+                "wrap": true
+              }
+            ]
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#5243DC"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "「設定」",
+                "margin": "md",
+                "size": "sm",
+                "color": "#9D3F3F"
+              },
+              {
+                "type": "text",
+                "text": "イベントの傾向を設定することができます。個人ごとに設定でき、総合的な傾向から提案されます。",
+                "size": "xs",
+                "color": "#0D6251",
+                "wrap": true
+              }
+            ]
+          },
+          {
+            "type": "separator",
+            "margin": "md",
+            "color": "#5243DC"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "その他",
+                "margin": "md",
+                "size": "sm",
+                "color": "#9D3F3F"
+              },
+              {
+                "type": "text",
+                "text": "「マニュアル」\nこのマニュアルが表示されます。\n「バイバイ」\nグループから退出します。",
+                "size": "xs",
+                "color": "#0D6251",
+                "wrap": true
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#E9CEC5"
+        },
+        "body": {
+          "backgroundColor": "#E2F4D9",
+          "separator": true,
+          "separatorColor": "#5676CD"
+        }
+      }
+    }
+  }
