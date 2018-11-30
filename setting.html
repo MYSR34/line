@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>イベント傾向設定(個人)</title>
+    </head>
+    <body>
+
+        <div id="checkarea">
+            <input id="c1" type="checkbox"/>音楽系<br/>
+            <input id="c2" type="checkbox"/>アウトドア系<br/>
+            <input id="c3" type="checkbox"/>電飾系<br/>
+            <input id="c4" type="checkbox"/>花火系<br/>
+            <input id="c5" type="checkbox"/>食物系<br/>
+            <input id="c6" type="checkbox"/>展示系<br/>
+            <input id="c7" type="checkbox"/>植物系<br/>
+            <input id="c8" type="checkbox"/>見る系<br/>
+
+            <input id="submit" type="button" value="決定"/><br/>
+        </div>
+        
+    
+        
+        
+        <script type="text/javascript">
+
+            function setting(){
+                var area = document.getElementById("checkarea");
+                area.innerText = "設定が保存されました。"
+            }
+    
+            var button = document.getElementById("submit");
+            button.addEventListener("click", setting, false);
+            
+        </script>
+
+    </body>
+</html>
