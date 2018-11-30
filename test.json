@@ -34,6 +34,24 @@
           "label": "Link style button",
           "uri": "https://example.com"
         }
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "Primary style button",
+          "uri": "https://example.com"
+        }
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "Primary style button",
+          "uri": "https://example.com"
+        }
       }
     ]
   }
