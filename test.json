@@ -122,7 +122,7 @@
         "action": {
           "type": "message",
           "label": "OK",
-          "uri": "OK"
+          "text": "OK"
         }
       }
     ]
