@@ -1,6 +1,8 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $jsonData = file_get_contents('php://input');
+        $data = json_decode($jsonData, JSON_UNESCAPED_UNICODE);
 
     $dbinfo = parse_url(getenv('DATABASE_URL'));
     $dsn =  'pgsql:host=' . $dbinfo['host'] . ';dbname=' . substr($dbinfo['path'], 1);;
