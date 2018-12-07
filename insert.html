@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>イベント追加</title>
+    </head>
+    <body>
+
+        挿入フォーム<br/>
+        名前<input id="nameform" type="text"/><br/>
+        開催地<input id="placeform" type="text"/><br/>
+        始まる日<input id="startform" type="text"/><br/>
+        終わる日<input id="endform" type="text"/><br/>
+        ジャンル<input id="genreform" type="text"/><br/>
+        費用<input id="priceform" type="text"/><br/>
+        画像URL<input id="imageform" type="text"/><br/>
+        公式URL<input id="siteform" type="text"/><br/>
+        説明<input id="exform" type="text"/><br/>
+        <input id="button" type="button" value="Go"/><br/>
+
+        <script type="text/javascript">
+        
+            var request = new XMLHttpRequest();
+
+            function inserting(){
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4) {
+                        alert("OK!");
+                    }
+                }
+
+                var namebox = document.getElementById("nameform").value;
+                var placebox = document.getElementById("placeform").value;
+                var startbox = document.getElementById("startform").value;
+                var endbox = document.getElementById("endform").value;
+                var genrebox = document.getElementById("genreform").value;
+                var pricebox = document.getElementById("priceform").value;
+                var imagebox = document.getElementById("imageform").value;
+                var sitebox = document.getElementById("siteform").value;
+                var exbox = document.getElementById("exform").value;
+                var insertData = {"name":namebox, "place":placebox, "startDay":startbox, "endDay":endbox, "genre":genrebox, "price":pricebox, "imageURI":imagebox, "siteURI":sitebox, "explanation":exbox};
+                var jsonI = JSON.stringify(insertData);
+                var insertURL = "./insert.php";
+                request.open('POST', insertURL, true);
+                request.setRequestHeader('Content-Type', 'application/json');
+                request.send(jsonI);
+            }
+
+            var button = document.getElementById("button");
+            button.addEventListener("click", inserting, false);
+            
+        </script>
+
+    </body>
+</html>
