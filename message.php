@@ -14,38 +14,48 @@ $message_text = $json_object->{"events"}[0]->{"message"}->{"text"};    //メッ�
 //グループ追加時なら送る
 if($json_object->{"events"}[0]->{"type"} === "join" && $json_object->{"events"}[0]->{"source"}->{"type"} === "group"){
     $return_message_text = 
-        "困ったときのイベント提案くんです！\n".
-        "「提案くん イベント教えて」といったように問いかけてくれれば、お答えします！\n".
-        "どんなイベントを教えてほしいか登録することもできますよ！「提案くん 設定」で今すぐ送信！\n".
-        "詳しくは「提案くん マニュアル」";
+        "グループに「楽しい」をお届けする あそぼっと です！\n".
+        "「あそぼっと、イベント教えて」といったように問いかけてくれれば、お答えします！\n".
+        "どんなイベントを教えてほしいか登録することもできますよ！「あそぼっと 設定」で今すぐ送信！\n".
+        "詳しくは「あそぼっと マニュアル」";
     sending_Message($accessToken, $replyToken, $return_message_text);
 }
  
 //メッセージタイプが「text」以外のときは何も返さず終了
 if($message_type != "text") exit;
 
-//テキスト内に特定の文字列を含んでいれば返信実行
-if(strpos($message_text,'提案くん') !== false && strpos($message_text,'バイバイ') !== false) {
-    //退出させる
-    //goodbye($accessToken, $json_object->{"events"}[0]->{"source"}->{"groupId"});
-
-    $groupID = $json_object->{"events"}[0]->{"source"}->{"groupId"};  //これは取れてる
-
-    sending_Message($accessToken, $replyToken, "退出の実装方法が分かりません");
-
-}else if(strpos($message_text,'提案くん') !== false && strpos($message_text,'マニュアル') !== false) {
-    //マニュアルを送る
-    sending_Manual($accessToken, $replyToken);
-}else if(strpos($message_text,'提案くん') !== false && strpos($message_text,'設定') !== false) {
-    //設定を送る
-    sending_Setting($accessToken, $replyToken);
-}else if(strpos($message_text,'提案くん') !== false && strpos($message_text,'イベント') !== false) {
-    //イベントを送る
-    $eventFlag = false;
-    if(strpos($message_text,'1月15日') !== false) {
-        $eventFlag = true;
+//テキスト内に"あそぼっと", "遊ぼっと", "asobot"を含んでいれば返信実行
+if(strpos($message_text,'あそぼっと') !== false || strpos($message_text,'遊ぼっと') !== false || strpos($message_text,'asobot') !== false){
+    if(strpos($message_text,'バイバイ') !== false) {
+        //退出させる
+        //goodbye($accessToken, $json_object->{"events"}[0]->{"source"}->{"groupId"});
+    
+        $groupID = $json_object->{"events"}[0]->{"source"}->{"groupId"};  //これは取れてる
+    
+        sending_Message($accessToken, $replyToken, "退出の実装方法が分かりません");
+    }else if(strpos($message_text,'マニュアル') !== false) {
+        //マニュアルを送る
+        sending_Manual($accessToken, $replyToken);
+    }else if(strpos($message_text,'設定') !== false) {
+        //設定を送る
+        sending_Setting($accessToken, $replyToken);
+    }else if(strpos($message_text,'イベント') !== false) {
+        //イベントを送る
+        $eventFlag = false;
+        if(strpos($message_text,'1月15日') !== false || strpos($message_text,'1/15') !== false) {
+            $eventFlag = true;
+        }
+        sending_Events($accessToken, $replyToken, $eventFlag);
+    }else{
+        $random = rand(0, 3);
+        if($random == 0) {
+            sending_Message($accessToken, $replyToken, "は～い");
+        }else if($random == 1) {
+            sending_Message($accessToken, $replyToken, "呼びましたか～");
+        }else if($random == 2) {
+            sending_Message($accessToken, $replyToken, "分からないことがあれば、「あそぼっと マニュアル」と言ってね！");
+        }
     }
-    sending_Events($accessToken, $replyToken, $eventFlag);
 }
 
 ?>

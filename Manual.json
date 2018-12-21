@@ -10,7 +10,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "＜イベント提案くん マニュアル＞",
+            "text": "＜あそぼっと マニュアル＞",
             "margin": "md",
             "align": "center",
             "gravity": "top",
@@ -26,7 +26,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "「提案くん」＋以下のメッセージが送られた場合のみ、それぞれのアクションを送信します。",
+            "text": "「あそぼっと」＋以下のメッセージが送られた場合のみ、それぞれのアクションを送信します。",
             "size": "md",
             "align": "start",
             "gravity": "top",
