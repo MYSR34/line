@@ -1,4 +1,4 @@
-{
+﻿{
     "type": "template",
     "altText": "this is a carousel template",
     "template": {
@@ -23,7 +23,7 @@
                 ]
             },
             {
-                "thumbnailImageUrl": "https://image.walkerplus.com/wpimg/walkertouch/wtd/event/94/n/17494.jpg",
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/94/l2/17494_1.jpg",
                 "title": "よみうりランド ジュエルミネーション",
                 "text": "2018/10/11(木)～2019/2/17(日)\n16:00～20:30\n入場料：1400円",
                 "actions": [

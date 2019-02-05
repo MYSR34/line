@@ -42,7 +42,7 @@ if(strpos($message_text,'あそぼっと') !== false || strpos($message_text,'�
     }else if(strpos($message_text,'イベント') !== false) {
         //イベントを送る
         $eventFlag = false;
-        if(strpos($message_text,'1月15日') !== false || strpos($message_text,'1/15') !== false) {
+        if(strpos($message_text,'2月5日') !== false || strpos($message_text,'2/5') !== false) {
             $eventFlag = true;
         }
         sending_Events($accessToken, $replyToken, $eventFlag);
