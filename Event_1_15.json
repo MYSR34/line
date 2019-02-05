@@ -1,4 +1,4 @@
-{
+﻿{
     "type": "template",
     "altText": "this is a carousel template",
     "template": {
@@ -47,7 +47,7 @@
                     {
                         "type": "uri",
                         "label": "詳細",
-                        "uri": "http://sweets-forest.com/event.html#door1"
+                        "uri": "http://sweets-forest.com/event.html"
                     },
                     {
                         "type":"message", 
