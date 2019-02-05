@@ -57,19 +57,19 @@
                 ]
             }, 
             {
-                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/63/l2/333263.jpg",
-                "title": "オペラ「遠野物語」",
-                "text": "2019/2/7(木)～2019/2/17(日)\n19:00～\n俳優座劇場",
+                "thumbnailImageUrl": "https://ms-cache.walkerplus.com/walkertouch/wtd/event/01/l2/331601.jpg",
+                "title": "名画の時間展",
+                "text": "2018/12/8(土)～2019/3/17(日)\n16:00～20:30\nポーラ美術館",
                 "actions": [
                     {
                         "type": "uri",
                         "label": "詳細",
-                        "uri": "http://www.konnyakuza.com/syusai.html"
+                        "uri": "http://www.polamuseum.or.jp/exhibition/21539/"
                     },
                     {
                         "type":"message", 
                         "label":"いいね", 
-                        "text":"「オペラ「遠野物語」」いいね！"
+                        "text":"「名画の時間展」いいね！"
                     }
                 ]
             },
